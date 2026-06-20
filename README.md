@@ -7,7 +7,7 @@ network classifier.
 The notebook extracts MFCC, chroma, and mel-spectrogram features with `librosa`,
 then trains a scikit-learn `MLPClassifier` on selected emotions from the RAVDESS
 speech dataset. The saved notebook records an accuracy of 70.83% on its test
-split. A sample WAV file is included for the final prediction example.
+split.
 
 ## Running it
 
@@ -23,8 +23,9 @@ jupyter lab
 
 The full RAVDESS dataset is not included. Place it in a folder named
 `speech-emotion-recognition-ravdess-data` beside the notebook, preserving its
-`Actor_*` folder structure. PyAudio may also require PortAudio to be installed
-on the system.
+`Actor_*` folder structure. The final prediction cell expects your own recording
+named `sample.wav`. PyAudio may also require PortAudio to be installed on the
+system.
 
 ## Status
 
